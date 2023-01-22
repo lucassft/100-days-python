@@ -1,4 +1,4 @@
-# day 3.5 - love calculator 
+# day 3.5 - Pyton Pizza
 
 print("Welcome to Pyton Pizza")
 
