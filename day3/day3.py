@@ -1,10 +1,36 @@
-# Day 3 - Beginner - Control Flow and Logical Operators
+# day 3.5 - love calculator 
 
-print("Bem-vindo à montanha russa! ")
-altura_cliente = int(input("Qual é a altura do cliente (em cm)? "))
+print("Welcome to Pyton Pizza")
 
-if altura_cliente > 120
+print("small pizza: $15")
+print("medium pizza: $20")
+print("large pizza: $25")
 
-idade_cliente = int(input("Qual é a idade do cliente? "))
+size = input("which size will it be? S, M or L? ")
 
-# teste dedé
+print("add pepperoni for small pizza: +$2")
+print("add pepperoni for medium or large pizza: +$3")
+
+add_pepperoni = input("would you like to add some pepperoni? Y/N")
+
+extra_cheese = input("would you like some extra cheese for $3? Y/N")
+
+final_bill = 0
+
+if size == "S":
+  final_bill += 15
+if size == "M":
+  final_bill += 20
+if size == "L":
+  final_bill += 25
+
+if add_pepperoni == "Y":
+  if size == "S":
+    final_bill += 2
+  if size == "M" or size == "L":
+    final_bill += 3
+
+if extra_cheese == "Y":
+  final_bill += 3
+
+print(f"your final bill is {final_bill}")
