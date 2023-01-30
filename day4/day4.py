@@ -1,10 +1,7 @@
-# cara ou coroa
+import random
 
-import random 
+names_string = input("insira o nome das pessoas que consumiram, separados por ', ': ")
+names_array = names_string.split(', ')
+quem_pagara = names_array[random.randint(0,names_array.__len__() - 1)]
 
-int_cara_coroa = random.randint(0,1)
-print(int_cara_coroa)
-if int_cara_coroa == 1:
-  print("deu cara.")
-else: 
-  print("deu coroa.")
+print(f"{quem_pagara} pagará a conta hoje")
